@@ -1,0 +1,28 @@
+table {
+  border-collapse: collapse;
+}
+
+.red {
+  color: red;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+caption {
+  font-weight: bold;
+}
+
+caption, th, td {
+  border: 1px solid black;
+}
+
+caption {
+  border-bottom: none;
+}
+
+td {
+  min-width: 30px;
+  text-align: center;
+}
