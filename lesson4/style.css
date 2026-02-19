@@ -47,7 +47,7 @@ textarea {
   border-color: black;
   border-width: 1px;
   resize: vertical;
-  height: 40px;
+  min-height: 40px;
   max-height: 80px;
 }
 
