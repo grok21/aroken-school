@@ -16,6 +16,7 @@ caption, th, td {
 
 caption {
   font-weight: bold;
+  font-size: 23px;
   border-bottom: none;
 }
 
