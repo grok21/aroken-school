@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .hero {
   padding-top: 80px;
   position: relative;
@@ -14,6 +21,8 @@
 }
 
 .hero-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 28px;
 }
@@ -56,6 +65,8 @@
   text-transform: uppercase;
   text-align: center;
   color: #fff;
+  -webkit-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
 
@@ -65,6 +76,8 @@
 
 .hero-images {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -72,7 +85,9 @@
   position: absolute;
   top: 40px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   padding: 22px;
   background: rgba(255, 255, 255, 0.9);
   border: 1px solid #535755;
@@ -81,16 +96,25 @@
 }
 
 .news-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 28px
 }
 
 .news-article {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   overflow: hidden;
   max-width: 284px;
-  flex: 1 1 25%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
   background-color: #fff;
   border: 1px solid #d3cbd9;
 }
@@ -119,8 +143,12 @@
 }
 
 .news-link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 8px;
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
@@ -135,11 +163,17 @@
   width: 22px;
   height: 9px;
   background-image: url("../materials/arrow-right.svg");
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  -o-transition: transform 0.2s;
   transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
 .news-link:hover::after {
-  transform: translateX(5px);
+  -webkit-transform: translateX(5px);
+      -ms-transform: translateX(5px);
+          transform: translateX(5px);
 }
 
 .faq {
@@ -158,6 +192,8 @@
 }
 
 .faq-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 28px;
 }
@@ -168,7 +204,9 @@ details {
 }
 
 details[open] summary::after {
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 details:last-child {
@@ -176,14 +214,23 @@ details:last-child {
 }
 
 summary {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 10px;
   list-style: none;
   padding: 20px;
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 /* Чтобы убрать треугольники во всех браузерах */
@@ -194,7 +241,8 @@ summary::-webkit-details-marker {
 summary::after {
   content: "";
   display: inline-block;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   width: 17px;
   height: 22px;
   background: url("../materials/arrow-down.svg") no-repeat center / cover;
@@ -216,8 +264,13 @@ details > p {
   }
   
   .hero-container {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .hero-info {
@@ -235,13 +288,17 @@ details > p {
   }
 
   .news-container {
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 20px;
   }
 
   .news-article {
-    flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
     max-width: 350px;
   }
 
@@ -254,8 +311,13 @@ details > p {
   }
 
   .faq-container {
-    flex-direction: column-reverse;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -265,7 +327,8 @@ details > p {
   }
 
   .news-article {
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
     max-width: 400px;
   }
 }
