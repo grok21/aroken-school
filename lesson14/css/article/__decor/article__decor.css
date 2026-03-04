@@ -1,0 +1,18 @@
+.article__decor-wrapper {
+  position: relative;
+}
+
+.article__decor {
+  position: absolute;
+  z-index: -1;
+}
+
+.article__decor-1 {
+  top: 100px;
+  left: -350px;
+}
+
+.article__decor-2 {
+  right: -350px;
+  bottom: 136px;
+}

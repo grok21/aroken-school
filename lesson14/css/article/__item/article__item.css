@@ -1,0 +1,8 @@
+.article__item {
+  margin-bottom: 12px;
+}
+
+.article__item::marker {
+  font-size: 22px;
+  color: #3596ED;
+}
