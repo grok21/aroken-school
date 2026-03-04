@@ -1,0 +1,22 @@
+.hero__button {
+  display: inline-block;
+  padding: 19px 32px;
+  width: 270px;
+  height: 57px;
+  background: #3596ed;
+  font-family: "Ubuntu", sans-serif;;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  -webkit-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.hero__button:hover {
+  opacity: 0.85;
+}

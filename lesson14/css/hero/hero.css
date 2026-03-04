@@ -1,0 +1,73 @@
+.hero {
+  padding-top: 80px;
+  position: relative;
+}
+
+.hero::after {
+  position: absolute;
+  bottom: 106px;
+  z-index: -1;
+  content: "";
+  width: 100%;
+  height: 48px;
+  background: url("../../materials/decor-index.svg") repeat-x;
+}
+
+.hero-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 28px;
+}
+
+.hero h1 {
+  margin-bottom: 40px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 62px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+}
+
+.hero h1 strong {
+  color: #3596ed;
+  font-weight: 600;
+}
+
+@media (width <= 992px) {
+  .hero::after {
+    display: none;
+  }
+  
+  .hero-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 52px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (width <= 768px) {
+  .hero h1 {
+    font-size: 50px;
+  }
+}
+
+@media (width <= 576px) {
+  .hero {
+    padding-top: 60px;
+  }
+  
+  .hero h1 {
+    font-size: 42px;
+  }
+}
