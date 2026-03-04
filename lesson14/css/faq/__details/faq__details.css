@@ -1,0 +1,14 @@
+.faq__details {
+  margin-bottom: 20px;
+  border-block: 1px solid #d3cbd9;
+}
+
+.faq__details[open] summary::after {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.faq__details:last-child {
+  margin-bottom: 0px;
+}

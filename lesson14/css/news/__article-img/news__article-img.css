@@ -1,0 +1,9 @@
+.news__article-img {
+  display: block;
+}
+
+@media (width <= 992px) {
+  .news__article-img {
+    width: 100%;
+  }
+}

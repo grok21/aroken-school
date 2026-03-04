@@ -1,0 +1,13 @@
+.header__phone-number {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #2c332f;
+  -webkit-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.header__phone-number:hover {
+  color: #3596ED;
+}

@@ -1,0 +1,37 @@
+.faq {
+  position: relative;
+}
+
+.faq::before {
+  content: "";
+  position: absolute;
+  top: 215px;
+  z-index: -1;
+  content: "";
+  width: calc(50% - 250px);
+  height: 48px;
+  background: url("../materials/decor-index.svg") repeat-x;
+}
+
+.faq-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 28px;
+}
+
+@media (width <= 992px) {
+  .faq::before {
+    display: none;
+  }
+
+  .faq-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}

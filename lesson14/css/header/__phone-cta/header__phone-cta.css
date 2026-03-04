@@ -1,0 +1,10 @@
+.header__phone-cta {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: right;
+  color: #858e8a;
+  margin-bottom: 8px;
+}
