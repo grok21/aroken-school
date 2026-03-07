@@ -57,10 +57,18 @@ button:focus-visible {
   .section {
     padding-bottom: 140px;
   }
+
+  .section__title {
+    margin-bottom: 40px;
+  }
 }
 
 @media (width <= 576px) {
   .section {
     padding-bottom: 80px;
+  }
+
+  .section__title {
+    margin-bottom: 30px;
   }
 }

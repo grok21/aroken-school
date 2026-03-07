@@ -99,15 +99,20 @@
       </section>
       <section id="sizes" class="sizes section">
         <div class="container">
-          <h2 class="sizes__title title-md">Размеры</h2>
+          <h2 class="sizes__title title-md section__title">Размеры</h2>
           <div class="sizes__slider-wrapper">
+            <button class="sizes__slider-button sizes__slider-button--prev" aria-label="Предыдущий слайд">
+              <svg width="40" height="40">
+                <use class="sizes__slider-button-icon" href="./icons/main-sprite.svg#double-arrow"></use>
+              </svg>
+            </button>
             <div class="swiper sizes__slider">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="sizes__slide-inner">
                     <picture>
                       <source srcset="./images/sizes-slides/nike-air-mag-slide-1.webp" />
-                      <img src="./images/sizes-slides/nike-air-mag-slide-1.png" width="357" height="375" alt="Кроссовки Nike Air Mag, вид спереди">
+                      <img class="sizes__slide-img" src="./images/sizes-slides/nike-air-mag-slide-1.png" width="357" height="375" alt="Кроссовки Nike Air Mag, вид спереди">
                     </picture>
                   </div>
                 </div>
@@ -115,7 +120,7 @@
                   <div class="sizes__slide-inner">
                     <picture>
                       <source srcset="./images/sizes-slides/nike-air-mag-slide-2.webp" />
-                      <img src="./images/sizes-slides/nike-air-mag-slide-2.png" width="408" height="375" alt="Кроссовки Nike Air Mag, вид сзади">
+                      <img class="sizes__slide-img" src="./images/sizes-slides/nike-air-mag-slide-2.png" width="408" height="375" alt="Кроссовки Nike Air Mag, вид сзади">
                     </picture>
                   </div>
                 </div>
@@ -123,12 +128,17 @@
                   <div class="sizes__slide-inner">
                     <picture>
                       <source srcset="./images/sizes-slides/nike-air-mag-slide-3.webp" />
-                      <img src="./images/sizes-slides/nike-air-mag-slide-3.png" width="442" height="375" alt="Кроссовки Nike Air Mag, вид сбоку">
+                      <img class="sizes__slide-img" src="./images/sizes-slides/nike-air-mag-slide-3.png" width="442" height="375" alt="Кроссовки Nike Air Mag, вид сбоку">
                     </picture>
                   </div>
                 </div>
               </div>
             </div>
+            <button class="sizes__slider-button sizes__slider-button--next" aria-label="Следующий слайд">
+              <svg width="40" height="40">
+                <use class="sizes__slider-button-icon" href="./icons/main-sprite.svg#double-arrow"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </section>
