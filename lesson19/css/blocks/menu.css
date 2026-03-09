@@ -1,6 +1,10 @@
 .menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 30px;
 }
 
@@ -10,6 +14,8 @@
   font-size: 13px;
   line-height: 130%;
   color: var(--main-color);
+  -webkit-transition: color var(--transition-time);
+  -o-transition: color var(--transition-time);
   transition: color var(--transition-time);
 }
 

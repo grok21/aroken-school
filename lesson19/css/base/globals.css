@@ -22,7 +22,8 @@
 }
 
 img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 a:focus-visible,

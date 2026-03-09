@@ -1,6 +1,5 @@
 .modal {
   --transition-time: 0.2s;
-
   position: fixed;
   inset: 0;
   z-index: var(--layer-3);
@@ -12,6 +11,8 @@
   text-align: center;
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: opacity var(--transition-time), visibility var(--transition-time);
+  -o-transition: opacity var(--transition-time), visibility var(--transition-time);
   transition: opacity var(--transition-time), visibility var(--transition-time);
 }
 
@@ -34,7 +35,8 @@
   vertical-align: middle;
   border-radius: 12px;
   background-color: var(--bg-color);
-  box-shadow: 0 0 20px var(--shadow-color);
+  -webkit-box-shadow: 0 0 20px var(--shadow-color);
+          box-shadow: 0 0 20px var(--shadow-color);
 }
 
 @media (width > 576px) {
