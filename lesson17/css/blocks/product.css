@@ -226,10 +226,22 @@
   background-color: var(--accent-color);
 }
 
+@media (width <= 420px) {
+  .product__buy-button {
+    width: 100%;
+  }
+}
+
 .product__cart-button {
   width: 59px;
   height: 59px;
   border: 1px solid var(--accent-color);
+}
+
+@media (width <= 420px) {
+  .product__cart-button {
+    flex-shrink: 0;
+  }
 }
 
 @media (any-hover: hover) {
