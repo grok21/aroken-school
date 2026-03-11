@@ -65,7 +65,8 @@ function callAllMethods(myObject) {
 
 const funcObject = {
   func1: () => console.log('func1'),
-  func2: () => console.log('func2')
+  func2: () => console.log('func2'),
+  b: 'Это не метод'
 }
 
 callAllMethods(funcObject)
