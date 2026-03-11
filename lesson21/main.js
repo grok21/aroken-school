@@ -38,12 +38,12 @@ console.log(`Скидка составила ${discount}%`)
 //     (username равен "admin" или "user") и пароль равен "123456"
 //     то выведите сообщение "Доступ разрешен", иначе — "Доступ запрещен".
 // 3. Используйте prompt для ввода имени пользователя и пароля.
-// const username = prompt("Введите имя пользователя: ", '')
-// const password = prompt("Введите пароль: ", '')
-// if (username === 'user' || username === 'admin' && password === '123456')
-//   alert("Доступ разрешён")
-// else
-//   alert("Доступ запрещён")
+const username = prompt("Введите имя пользователя: ", '')
+const password = prompt("Введите пароль: ", '')
+if (username === 'user' || username === 'admin' && password === '123456')
+  alert("Доступ разрешён")
+else
+  alert("Доступ запрещён")
 
 
 // *Задача 4.
