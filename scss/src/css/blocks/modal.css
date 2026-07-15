@@ -1,0 +1,145 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.modal--open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__window {
+  position: relative;
+  border-radius: 22px;
+  background: var(--main-color);
+  width: 635px;
+}
+
+.modal__close {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+.modal__content {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 5%;
+}
+
+.modal__title {
+  font-size: 30px;
+  line-height: 193%;
+  color: var(--black-color);
+  font-weight: 600;
+  margin-top: 10%;  
+}
+
+.modal__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 163%;
+  color: var(--text-color);
+  margin-top: 2%;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
+.modal__input {
+  border-radius: 12px;
+  background: #e9eff3;
+  width: 100%;
+  height: 6vh;
+  margin-bottom: 3%;
+  padding-left: 3%;
+}
+
+.modal__privacy {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  margin-bottom: 4%;
+  margin-top: 2%;
+}
+
+.modal__privacy-checkbox {
+  appearance: none;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--accent-color);
+  border-radius: 2px;
+  background-color: var(--accent-color);
+}
+
+.modal__privacy-checkbox:checked {
+  background-image: url('../../icons/modal-checked.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.modal__privacy-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  color: var(--black-color);
+}
+
+.modal__privacy-text a {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: var(--accent-color);
+}
+
+.modal__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 6vh;
+  border-radius: 14px;
+  background: var(--accent-color);
+  color: #1b1b1b;
+  margin-bottom: 3%;
+  font-weight: 700;
+  font-size: 16px;
+  color: #1b1b1b;
+}
+
+@media (width <= 576px) {
+  .modal__window {
+    width: 90%;
+  }
+}
+
+@media (width <= 400px) {
+  .modal__title {
+    font-size: 25px;
+  }
+
+  .modal__text {
+    font-size: 14px;
+  }
+
+  .modal__close img {
+    height: 22px;
+  }
+}

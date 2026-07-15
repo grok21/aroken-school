@@ -1,0 +1,29 @@
+<svg viewBox="0 0 388 136" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- <foreignObject x="-10" y="-10" width="408" height="156">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(5px);clip-path:url(#bgblur_0_637_787_clip_path);height:100%;width:100%"></div>
+  </foreignObject> -->
+  <path data-figma-bg-blur-radius="10" d="M0 20C0 8.95431 8.9543 0 20 0H368C379.046 0 388 8.95431 388 20V116C388 127.046 379.046 136 368 136H20C8.95431 136 0 127.046 0 116V20Z" fill="white" fill-opacity="0.05" />
+  <rect x="0.5" y="0.5" width="387" height="135" rx="19.5" stroke="url(#paint0_linear_637_787)" stroke-opacity="0.2" />
+  <mask id="mask0_637_787" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="1" width="388" height="135">
+    <rect y="1" width="388" height="135" rx="20" fill="#D9D9D9" />
+  </mask>
+  <g mask="url(#mask0_637_787)">
+    <g filter="url(#filter1_f_637_787)">
+      <ellipse cx="378" cy="126" rx="55" ry="51" fill="#FDBC2F" fill-opacity="0.4" />
+    </g>
+  </g>
+  <defs>
+    <!-- <clipPath id="bgblur_0_637_787_clip_path" transform="translate(10 10)">
+      <path d="M0 20C0 8.95431 8.9543 0 20 0H368C379.046 0 388 8.95431 388 20V116C388 127.046 379.046 136 368 136H20C8.95431 136 0 127.046 0 116V20Z" />
+    </clipPath> -->
+    <filter id="filter1_f_637_787" x="223" y="-25" width="310" height="302" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+      <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_637_787" />
+    </filter>
+    <linearGradient id="paint0_linear_637_787" x1="167.485" y1="3.25794e-06" x2="165.324" y2="138.526" gradientUnits="userSpaceOnUse">
+      <stop stop-color="white" stop-opacity="0.5" />
+      <stop offset="1" stop-color="white" stop-opacity="0.2" />
+    </linearGradient>
+  </defs>
+</svg>

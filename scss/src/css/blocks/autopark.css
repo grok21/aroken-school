@@ -1,0 +1,450 @@
+.autopark {
+  border-radius: 32px;
+  width: 96%;
+  background: #f3f7fa;
+  margin-left: 2%;
+}
+
+.autopark__scroll-arrow-left,
+.autopark__scroll-arrow-right {
+  display: none;
+}
+
+.autopark__content {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 4%;
+}
+
+.autopark__title {
+  font-weight: 600;
+  font-size: 58px;
+  line-height: 117%;
+  color: var(--black-color);
+}
+
+.autopark__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e6edf3;
+  width: 98%;
+  margin-left: 1%;
+  border-radius: 20px;
+  margin-top: 4%;
+}
+
+.autopark__plans {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.5%;
+  gap: 0.5%;
+}
+
+.autopark__plans-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 20%;
+  background: #f3f7fa;
+  padding: 1% 3% 1% 3%;
+}
+
+.autopark__plans-item--active {
+  background: var(--accent-color);
+}
+
+.autopark__plans-item:first-child {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.autopark__plans-item:last-child {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.plans-item__name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  color: var(--black-color);
+}
+
+.autopark__autos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  gap: 2%;
+}
+
+.autopark__autos-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  width: 23.5%;
+  box-shadow: 0 4px 6px 0 rgba(176, 182, 186, 0.1);
+  background: var(--main-color);
+  margin-bottom: 2%;
+}
+
+.autopark__autos-item-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.auto__item-tag {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #000;
+  border-radius: 10px;
+  padding: 2% 3% 2% 3%;
+  color: var(--main-color);
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.auto__item-tag.econom {
+  background: #fd9d2f;
+  ;
+}
+
+.auto__item-tag.comfort {
+  background: #fd582f;
+}
+
+.auto__item-tag.comfort-plus {
+  background: #f01515;
+}
+
+.auto__item-tag.business {
+  background: #0e0e11;
+}
+
+.autos__item-title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 145%;
+  color: var(--black-color);
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.autos__item-options {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-top: 4%;
+  margin-left: 5%;
+}
+
+.autos__item-option {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+}
+
+.option__info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.option__icon {
+  border-radius: 6px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--accent-color);
+}
+
+.option__name {
+  display: inline-block;
+  width: 150px;
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--black-color);
+  margin-left: 4%;
+}
+
+.option__descr {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 15px;
+  text-align: right;
+  color: var(--black-color);
+  margin-left: auto;
+}
+
+.option__line {
+  width: 100%;
+  height: 1px;
+  background: #e7e7f0;
+  margin-top: 3%;
+}
+
+.autos__item-price {
+  width: 90%;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 100%;
+  color: var(--black-color);
+  margin-left: 5%;
+  text-align: right;
+}
+
+.autos__item-price-bold {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 178%;
+  text-align: right;
+  color: var(--black-color);
+}
+
+.autos__item-button {
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 14px;
+  background: var(--black-color);
+  text-align: center;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--main-color);
+}
+
+.autopark__more-button {
+  display: none;
+}
+
+@media (width <=1440px) {
+  .autopark__title {
+    font-size: 48px;
+  }
+
+  .autopark__plans-item {
+    padding: 1% 2%;
+  }
+
+  .plans-item__name {
+    font-size: 14px;
+  }
+
+  .autos__item-title {
+    font-size: 18px;
+  }
+
+  .autos__item-price {
+    font-size: 14px;
+  }
+
+  .autos__item-price-bold {
+    font-size: 16px;
+  }
+
+  .option__name {
+    font-size: 13px;
+  }
+
+  .option__descr {
+    font-size: 13px;
+  }
+
+  .autos__item-button {
+    font-size: 14px;
+  }
+}
+
+@media (width <=1280px) {
+  .autopark__title {
+    font-size: 43px;
+  }
+
+  .autopark__plans-item {
+    padding: 1% 2%;
+  }
+
+  .plans-item__name {
+    font-size: 12px;
+  }
+
+  .autos__item-title {
+    font-size: 15px;
+  }
+
+  .option__icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .option__name {
+    font-size: 11px;
+  }
+
+  .option__descr {
+    font-size: 11px;
+  }
+
+  .autos__item-price {
+    font-size: 12px;
+  }
+
+  .autos__item-price-bold {
+    font-size: 13px;
+  }
+
+  .autos__item-button {
+    font-size: 12px;
+  }
+}
+
+@media (width <=1024px) {
+  .autopark__title {
+    font-size: 38px;
+  }
+
+  .autopark__plans-item {
+    flex-direction: column;
+  }
+
+  .autopark__autos-item {
+    width: 49%;
+  }
+}
+
+@media (width <=576px) {
+  .autopark__title {
+    font-size: 28px;
+    line-height: 243%;
+  }
+
+  .autopark__menu {
+    display: block;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 1% 7%;
+  }
+
+  .autopark__plans-item {
+    flex: 0 0 auto;
+    width: auto;
+    padding: 2% 3%;
+    gap: 8px;
+  }
+
+  /* Немного уменьшаем картинки машин внутри кнопок на мобилке */
+  .plans-item__img {
+    width: 50px;
+    height: auto;
+  }
+
+  .autopark__plans {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    gap: 2%;
+  }
+
+  .autopark__plans::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Стили для левой кнопки-стрелки */
+  .autopark__scroll-arrow-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 15%;
+    z-index: 10;
+
+    /* Полупрозрачный круглый фон как на макете */
+    /* background: radial-gradient(circle at center, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.15) 50%, transparent 51%) !important; */
+    background: linear-gradient(to right, #e6edf3 40%, transparent);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #000;
+    cursor: pointer;
+  }
+
+  .autopark__scroll-arrow-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 15%;
+    z-index: 10;
+
+    /* Полупрозрачный круглый фон как на макете */
+    /* background: radial-gradient(circle at center, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.15) 50%, transparent 51%) !important; */
+    background: linear-gradient(to left, #e6edf3 40%, transparent);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #000;
+    cursor: pointer;
+  }
+
+  .autopark__autos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .autopark__autos-item {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  .autopark__more-button img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .autopark__more-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+    border-radius: 14px;
+    padding: 5%;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 5%;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: #000;
+  }
+
+  .js-mobile-hidden {
+    display: none;
+  }
+}
