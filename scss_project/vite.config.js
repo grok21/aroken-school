@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer'
 
 export default defineConfig ({
-  base: './',
+  base: '/aroken-school/',
   root: './src',
   server: {
     port: 3000
