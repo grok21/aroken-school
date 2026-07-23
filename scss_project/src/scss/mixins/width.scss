@@ -1,0 +1,9 @@
+@mixin width_100_percent {
+  width: 100%;
+  margin-left: 0%;
+}
+
+@mixin width_96_percent {
+  width: 96%;
+  margin-left: 2%;
+}
