@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- base -->
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/base/fonts.css">
+  <link rel="stylesheet" href="./css/base/globals.css">
+  <link rel="stylesheet" href="./css/base/normalize.css">
+  <link rel="stylesheet" href="./css/base/vars.css">
+
+  <!-- blocks -->
+  <link rel="stylesheet" href="./scss/about.scss">
+  <link rel="stylesheet" href="./css/blocks/autopark.css">
+  <link rel="stylesheet" href="./css/blocks/calculator.css">
+  <link rel="stylesheet" href="./css/blocks/callback.css">
+  <link rel="stylesheet" href="./css/blocks/feedback.css">
+  <link rel="stylesheet" href="./css/blocks/footer.css">
+  <link rel="stylesheet" href="./css/blocks/home.css">
+  <link rel="stylesheet" href="./css/blocks/questions.css">
+  <link rel="stylesheet" href="./css/blocks/reasons.css">
+  <link rel="stylesheet" href="./css/blocks/requirements.css">
+  <link rel="stylesheet" href="./css/blocks/steps.css">
+  <link rel="stylesheet" href="./css/blocks/modal.css">
+
+  <!-- libs -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+
+  <!-- js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="./js/index.js" type="module"></script>
+  <script src="./js/calculator-index.js" type="module"></script>
+
+  <title></title>
+</head>
+
+<body class="page__body">
+
+  <main class="page__main">
+
+    <div class="mobile-header">
+      <img class="mobile-header__cross" src="./icons/mobile-menu-cross.svg" alt="">
+      <div class="mobile-header__content">
+        <ul class="mobile-menu">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#home">Главная</a>
+            <div class="mobile-menu__line"></div>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#about">О нас</a>
+            <div class="mobile-menu__line"></div>
+          </li>
+          <!-- <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#autopark">Автопарк</a>
+            <div class="mobile-menu__line"></div>
+          </li> -->
+          <!-- <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#top-models">Услуги</a>
+            <div class="mobile-menu__line"></div>
+          </li> -->
+          <li class="mobile-menu__item mobile-menu__item--dropdown is-open">
+            <div class="mobile-menu__link-wrapper">
+              <a class="mobile-menu__link" href="#characteristics">Автопарк</a>
+              <span class="mobile-menu__arrow"></span>
+            </div>
+
+            <ul class="mobile-sub-menu">
+              <li class="mobile-sub-menu__item"><a href="#">Эконом класса</a></li>
+              <li class="mobile-sub-menu__item"><a href="#">Комфорт класса</a></li>
+              <li class="mobile-sub-menu__item"><a href="#">Комфорт плюс</a></li>
+              <li class="mobile-sub-menu__item"><a href="#">Бизнес</a></li>
+            </ul>
+            <div class="mobile-menu__line"></div>
+          </li>
+          <li class="mobile-menu__item mobile-menu__item--dropdown">
+            <div class="mobile-menu__link-wrapper">
+              <a class="mobile-menu__link" href="#top-models">Услуги</a>
+              <span class="mobile-menu__arrow"></span>
+            </div>
+
+            <ul class="mobile-sub-menu">
+              <li class="mobile-sub-menu__item"><a href="#">Аренда с выкупом</a></li>
+              <li class="mobile-sub-menu__item"><a href="#">Посменная работа</a></li>
+              <li class="mobile-sub-menu__item"><a href="#">Подключение к яндекс такси</a></li>
+            </ul>
+            <div class="mobile-menu__line"></div>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#calculator">Калькулятор</a>
+            <div class="mobile-menu__line"></div>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#feedback">Отзывы</a>
+            <div class="mobile-menu__line"></div>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#top-models">Контакты</a>
+          </li>
+        </ul>
+        <div class="mobile-header__contacts">
+          <div class="mobile-header__links">
+            <img class="mobile-header__link" src="./icons/tg.svg" alt="">
+            <img class="mobile-header__link" src="./icons/wa.svg" alt="">
+            <img class="mobile-header__link" src="./icons/max.svg" alt="">
+          </div>
+          <div class="mobile-header__tel">
+            <img class="mobile-header__tel-icon" src="./icons/header-tel.svg" alt="">
+            <div class="mobile-header__tel-info">
+              <a href="tel:79921614524">+7 (992) 161-45-24</a>
+              <p>ежедневно с 9:00 до 21:00</p>
+            </div>
+          </div>
+          <button class="mobile-header__button" data-modal-button="lead" data-modal-speed="300">
+            <p class="mobile-header__button-name">Оставить заявку</p>
+            <div class="mobile-header__button-arrow-container">
+              <img class="mobile-header__button-image" src="./icons/arrow-top.svg" alt="" class="home__button-logo">
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <section class="home" id="home">
+      <div class="home__header">
+        <ul class="home__menu">
+          <li class="menu__item">
+            <a class="menu__link" href="#home">Главная</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#about">О нас</a>
+          </li>
+          <li class="menu__item menu__item--dropdown">
+            <div class="menu__link-wrapper">
+              <a class="menu__link" href="#autopark">Автопарк</a>
+              <span class="menu__arrow"></span>
+            </div>
+            <ul class="sub-menu">
+              <li class="sub-menu__item"><a href="#">Эконом класса</a></li>
+              <li class="sub-menu__item active"><a href="#">Комфорт класса</a></li>
+              <li class="sub-menu__item"><a href="#">Комфорт плюс</a></li>
+              <li class="sub-menu__item"><a href="#">Бизнес</a></li>
+            </ul>
+          </li>
+          <li class="menu__item menu__item--dropdown">
+            <div class="menu__link-wrapper">
+              <a class="menu__link" href="#autopark">Услуги</a>
+              <span class="menu__arrow"></span>
+            </div>
+            <ul class="sub-menu sub-menu-uslugi">
+              <li class="sub-menu__item"><a href="#">Аренда с выкупом</a></li>
+              <li class="sub-menu__item active"><a href="#">Посменная работа</a></li>
+              <li class="sub-menu__item"><a href="#">Подключение к яндекс такси</a></li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#calculator">Калькулятор</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#feedback">Отзывы</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#footer">Контакты</a>
+          </li>
+        </ul>
+        <div class="header__contacts">
+          <div class="header__burger">
+            <img src="./icons/burger-button.svg" alt="">
+          </div>
+          <div class="header__links">
+            <a class="header__link" href="#"><img src="./icons/tg.svg" alt=""></a>
+            <a class="header__link" href=""><img src="./icons/wa.svg" alt=""></a>
+            <a class="header__link" href=""><img src="./icons/max.svg" alt=""></a>
+          </div>
+          <div class="header__tel">
+            <img class="header__tel-icon" src="./icons/header-tel.svg" alt="">
+            <div class="header__tel-info">
+              <a href="tel:79921614524">+7 (992) 161-45-24</a>
+              <p>ежедневно с 9:00 до 21:00</p>
+            </div>
+          </div>
+          <button class="header__button" data-modal-button="lead" data-modal-speed="300">
+            <p class="header__button-name">Оставить заявку</p>
+            <div class="header__button-arrow-container">
+              <img class="header__button-image" src="./icons/arrow-top.svg" alt="" class="home__button-logo">
+            </div>
+          </button>
+        </div>
+      </div>
+      <div class="home__content">
+        <h1 class="home__title">Аренда авто<br>под такси<span class="home__title-accent"><br>в Москве</span></h1>
+        <p class="home__descr">Доход до <span class="home__descr-accent">15 000 ₽</span> в день</p>
+        <div class="home__button-plus-yandex">
+          <button class="home__button" data-modal-button="lead" data-modal-speed="300">
+            <p class="home__button-name">Выбрать авто</p>
+            <div class="home__button-arrow-container">
+              <img class="home__button-image" src="./icons/arrow-top.svg" alt="">
+            </div>
+          </button>
+          <div class="home__yandex">
+            <img class="home__yandex-logo" src="./images/yandex.svg" alt="">
+            <p class="home__yandex-text">Официальный партнёр</p>
+          </div>
+        </div>
+        <ul class="home__benefits">
+          <li class="home__benefits-item">
+            <img class="benefits-item__logo" src="./icons/checked.svg" alt="">
+            <p class="benefits-item__descr">Возможность выкупа автомобиля</p>
+          </li>
+          <li class="home__benefits-item">
+            <img class="benefits-item__logo" src="./icons/checked.svg" alt="">
+            <p class="benefits-item__descr">Все классы автомобилей</p>
+          </li>
+          <li class="home__benefits-item">
+            <img class="benefits-item__logo" src="./icons/checked.svg" alt="">
+            <p class="benefits-item__descr">Своя станция обслуживания</p>
+          </li>
+          <li class="home__benefits-item">
+            <img class="benefits-item__logo" src="./icons/checked.svg" alt="">
+            <p class="benefits-item__descr">Только исправные автомобили</p>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </section>
+
+    <section class="autopark">
+      <div class="autopark__content">
+        <h2 class="autopark__title">Автопарк</h2>
+        <div class="autopark__menu">
+          <button class="autopark__scroll-arrow-left">←</button>
+          <div class="autopark__plans">
+            <button class="autopark__plans-item autopark__plans-item--active">
+              <img class="plans-item__img" src="./images/plan1.png" alt="">
+              <p class="plans-item__name">Все тарифы</p>
+            </button>
+            <button class="autopark__plans-item">
+              <img class="plans-item__img" src="./images/plan2.png" alt="">
+              <p class="plans-item__name">Эконом</p>
+            </button>
+            <button class="autopark__plans-item">
+              <img class="plans-item__img" src="./images/plan3.png" alt="">
+              <p class="plans-item__name">Комфорт</p>
+            </button>
+            <button class="autopark__plans-item">
+              <img class="plans-item__img" src="./images/plan4.png" alt="">
+              <p class="plans-item__name">Комфорт+</p>
+            </button>
+            <button class="autopark__plans-item">
+              <img class="plans-item__img" src="./images/plan5.png" alt="">
+              <p class="plans-item__name">Бизнес</p>
+            </button>
+          </div>
+          <button class="autopark__scroll-arrow-right">→</button>
+        </div>
+        <ul class="autopark__autos">
+          <li class="autopark__autos-item">
+            <div class="auto__item-tag">
+              <p>Премиум</p>
+            </div>
+            <img class="autopark__autos-item-image" src="./autos/auto5.jpg" alt="">
+            <h3 class="autos__item-title">HONGQI H5</h3>
+            <ul class="autos__item-options">
+              <li class="autos__item-option">
+                <div class="option__info">
+                  <div class="option__icon">
+                    <img src="./icons/auto1.svg" alt="">
+                  </div>
+                  <h4 class="option__name">Коробка:</h4>
+                  <p class="option__descr">АКПП</p>
+                </div>
+                <div class="option__line"></div>
+              </li>
+              <li class="autos__item-option">
+                <div class="option__info">
+                  <div class="option__icon">
+                    <img src="./icons/auto2.svg" alt="">
+                  </div>
+                  <h4 class="option__name">Объём двигателя:</h4>
+                  <p class="option__descr">2.0</p>
+                </div>
+                <div class="option__line"></div>
+              </li>
+              <li class="autos__item-option">
+                <div class="option__info">
+                  <div class="option__icon">
+                    <img src="./icons/auto3.svg" alt="">
+                  </div>
+                  <h4 class="option__name">Тип топлива:</h4>
+                  <p class="option__descr">бензин</p>
+                </div>
+                <div class="option__line"></div>
+              </li>
+              <li class="autos__item-option">
+                <div class="option__info">
+                  <div class="option__icon">
+                    <img src="./icons/auto4.svg" alt="">
+                  </div>
+                  <h4 class="option__name">Расход авто:</h4>
+                  <p class="option__descr">6.8</p>
+                </div>
+                <div class="option__line"></div>
+              </li>
+            </ul>
+            <p class="autos__item-price">Цена: <span class="autos__item-price-bold">от 2300 руб./день</span></p>
+            <button class="autos__item-button" data-modal-button="lead" data-modal-speed="300">Оставить заявку</butt>
+          </li>
+          <li class="autopark__autos-item">
+            <div class="auto__item-tag">
+              <p>Премиум</p>
+            </div>
+            <img class="autopark__autos-item-image" src="./autos/auto2.jpg" alt="">
+            <h3 class="autos__item-title">HONGQI H5</h3>
+            <ul class="autos__item-options">
+              <li class="autos__item-option">
+                <div class="option__info">
+                  <div class="option__icon">
+                    <img src="./icons/auto1.svg" alt="">
+                  </div>
+                  <h4 class="option__name">Коробка:</h4>
+                  <p class="option__descr">АКПП</p>
+                </div>
+                <div class="option__line"></div>
+              </li>
+              <li class="autos__item-option">
+                <div class="option__info">
+                  <div class="option__icon">
+                    <img src="./icons/auto2.svg" alt="">
+                  </div>
+                  <h4 class="option__name">Объём двигателя:</h4>
+                  <p class="option__descr">2.0</p>
+                </div>
+                <div class="option__line"></div>
+              </li>
+              <li class="autos__item-option">
+                <div class="option__info">
+                  <div class="option__icon">
+                    <img src="./icons/auto3.svg" alt="">
+                  </div>
+                  <h4 class="option__name">Тип топлива:</h4>
+                  <p class="option__descr">бензин</p>
+                </div>
+                <div class="option__line"></div>
+              </li>
+              <li class="autos__item-option">
+                <div class="option__info">
+                  <div class="option__icon">
+                    <img src="./icons/auto4.svg" alt="">
+                  </div>
+                  <h4 class="option__name">Расход авто:</h4>
+                  <p class="option__descr">6.8</p>
+                </div>
+                <div class="option__line"></div>
+              </li>
+            </ul>
+            <p class="autos__item-price">Цена: <span class="autos__item-price-bold">от 2300 руб./день</span></p>
+            <button class="autos__item-button" data-modal-button="lead" data-modal-speed="300">Оставить
+              заявку</button>
+          </li>
+          <li class="autopark__autos-item">
+            <div class="auto__item-tag">
+              <p>Премиум</p>
+            </div>
+            <img class="autopark__autos-item-image" src="./autos/auto3.jpg" alt="">
+            <h3 class="autos__item-title">HONGQI H5</h3>
+            <ul class="autos__item-options">
+              <li class="autos__item-option">
+                <div class="option__info">
+                  <div class="option__icon">
+                    <img src="./icons/auto1.svg" alt="">
+                  </div>
+                  <h4 class="option__name">Коробка:</h4>
+                  <p class="option__descr">АКПП</p>
+                </div>
+                <div class="option__line"></div>
+              </li>
+              <li class="autos__item-option">
+                <div class="option__info">
+                  <div class="option__icon">
+                    <img src="./icons/auto2.svg" alt="">
+                  </div>
+                  <h4 class="option__name">Объём двигателя:</h4>
+                  <p class="option__descr">2.0</p>
+                </div>
+                <div class="option__line"></div>
+              </li>
+              <li class="autos__item-option">
+                <div class="option__info">
+                  <div class="option__icon">
+                    <img src="./icons/auto3.svg" alt="">
+                  </div>
+                  <h4 class="option__name">Тип топлива:</h4>
+                  <p class="option__descr">бензин</p>
+                </div>
+                <div class="option__line"></div>
+              </li>
+              <li class="autos__item-option">
+                <div class="option__info">
+                  <div class="option__icon">
+                    <img src="./icons/auto4.svg" alt="">
+                  </div>
+                  <h4 class="option__name">Расход авто:</h4>
+                  <p class="option__descr">6.8</p>
+                </div>
+                <div class="option__line"></div>
+              </li>
+            </ul>
+            <p class="autos__item-price">Цена: <span class="autos__item-price-bold">от 2300 руб./день</span></p>
+            <button class="autos__item-button" data-modal-button="lead" data-modal-speed="300">Оставить
+              заявку</button>
+          </li>
+          <li class="autopark__autos-item">
+            <div class="auto__item-tag">
+              <p>Премиум</p>
+            </div>
+            <img class="autopark__autos-item-image" src="./autos/auto4.jpg" alt="">
+            <h3 class="autos__item-title">HONGQI H5</h3>
+            <ul class="autos__item-options">
+              <li class="autos__item-option">
+                <div class="option__info">
+                  <div class="option__icon">
+                    <img src="./icons/auto1.svg" alt="">
+                  </div>
+                  <h4 class="option__name">Коробка:</h4>
+                  <p class="option__descr">АКПП</p>
+                </div>
+                <div class="option__line"></div>
+              </li>
+              <li class="autos__item-option">
+                <div class="option__info">
+                  <div class="option__icon">
+                    <img src="./icons/auto2.svg" alt="">
+                  </div>
+                  <h4 class="option__name">Объём двигателя:</h4>
+                  <p class="option__descr">2.0</p>
+                </div>
+                <div class="option__line"></div>
+              </li>
+              <li class="autos__item-option">
+                <div class="option__info">
+                  <div class="option__icon">
+                    <img src="./icons/auto3.svg" alt="">
+                  </div>
+                  <h4 class="option__name">Тип топлива:</h4>
+                  <p class="option__descr">бензин</p>
+                </div>
+                <div class="option__line"></div>
+              </li>
+              <li class="autos__item-option">
+                <div class="option__info">
+                  <div class="option__icon">
+                    <img src="./icons/auto4.svg" alt="">
+                  </div>
+                  <h4 class="option__name">Расход авто:</h4>
+                  <p class="option__descr">6.8</p>
+                </div>
+                <div class="option__line"></div>
+              </li>
+            </ul>
+            <p class="autos__item-price">Цена: <span class="autos__item-price-bold">от 2300 руб./день</span></p>
+            <button class="autos__item-button" data-modal-button="lead" data-modal-speed="300">Оставить
+              заявку</button>
+          </li>
+          <li class="autopark__autos-item">
+            <div class="auto__item-tag">
+              <p>Премиум</p>
+            </div>
+            <img class="autopark__autos-item-image" src="./autos/auto4.jpg" alt="">
+            <h3 class="autos__item-title">HONGQI H5</h3>
+            <ul class="autos__item-options">
+              <li class="autos__item-option">
+                <div class="option__info">
+                  <div class="option__icon">
+                    <img src="./icons/auto1.svg" alt="">
+                  </div>
+                  <h4 class="option__name">Коробка:</h4>
+                  <p class="option__descr">АКПП</p>
+                </div>
+                <div class="option__line"></div>
+              </li>
+              <li class="autos__item-option">
+                <div class="option__info">
+                  <div class="option__icon">
+                    <img src="./icons/auto2.svg" alt="">
+                  </div>
+                  <h4 class="option__name">Объём двигателя:</h4>
+                  <p class="option__descr">2.0</p>
+                </div>
+                <div class="option__line"></div>
+              </li>
+              <li class="autos__item-option">
+                <div class="option__info">
+                  <div class="option__icon">
+                    <img src="./icons/auto3.svg" alt="">
+                  </div>
+                  <h4 class="option__name">Тип топлива:</h4>
+                  <p class="option__descr">бензин</p>
+                </div>
+                <div class="option__line"></div>
+              </li>
+              <li class="autos__item-option">
+                <div class="option__info">
+                  <div class="option__icon">
+                    <img src="./icons/auto4.svg" alt="">
+                  </div>
+                  <h4 class="option__name">Расход авто:</h4>
+                  <p class="option__descr">6.8</p>
+                </div>
+                <div class="option__line"></div>
+              </li>
+            </ul>
+            <p class="autos__item-price">Цена: <span class="autos__item-price-bold">от 2300 руб./день</span></p>
+            <button class="autos__item-button" data-modal-button="lead" data-modal-speed="300">Оставить
+              заявку</button>
+          </li>
+        </ul>
+        <button id="load-more-autos" class="autopark__more-button">
+          <img src="./icons/more-autos-icon.svg" alt="">
+          Смотреть ещё
+        </button>
+      </div>
+    </section>
+
+    <section class="calculator" id="calculator">
+      <div class="calculator__top-section">
+        <div class="calculator__info">
+          <div class="calculator__content">
+            <h2 class="calculator__content-title">Рассчитайте<br><span class="calculator__content-title-accent">свой
+                доход</span></h2>
+            <p class="calculator__content-text">Количество рабочих дней в неделю</p>
+            <div class="calculator__content-days">
+              <button class="calculator__content-day">1</button>
+              <button class="calculator__content-day">2</button>
+              <button class="calculator__content-day">3</button>
+              <button class="calculator__content-day">4</button>
+              <button class="calculator__content-day">5</button>
+              <button class="calculator__content-day calculator__content-day--active">6</button>
+              <button class="calculator__content-day">7</button>
+            </div>
+          </div>
+        </div>
+        <div class="calculator__image"></div>
+      </div>
+      <ul class="calculator__plans">
+        <li class="calculator__plan">
+          <p class="calculator__plan-descr">Ваш заработок в неделю на<br>тарифе Эконом</p>
+          <p id="plan-econom" class="calculator__plan-amount">60 000 ₽</p>
+          <button class="calculator__plan-button" data-modal-button="lead" data-modal-speed="300">Оставить
+            заявку</button>
+        </li>
+        <li class="calculator__plan">
+          <p class="calculator__plan-descr">Ваш заработок в неделю на<br>тарифе Комфорт</p>
+          <p id="plan-comfort" class="calculator__plan-amount">72 000 ₽</p>
+          <button class="calculator__plan-button" data-modal-button="lead" data-modal-speed="300">Оставить
+            заявку</button>
+        </li>
+        <li class="calculator__plan">
+          <p class="calculator__plan-descr">Ваш заработок в неделю на<br>тарифе Комфорт+</p>
+          <p id="plan-comfort-plus" class="calculator__plan-amount">84 000 ₽</p>
+          <button class="calculator__plan-button calculator__plan-button--active" data-modal-button="lead"
+            data-modal-speed="300">Оставить заявку</button>
+        </li>
+        <li class="calculator__plan">
+          <p class="calculator__plan-descr">Ваш заработок в неделю на<br>тарифе Бизнес</p>
+          <p id="plan-business" class="calculator__plan-amount">96 000 ₽</p>
+          <button class="calculator__plan-button" data-modal-button="lead" data-modal-speed="300">Оставить
+            заявку</button>
+        </li>
+      </ul>
+    </section>
+
+    <section class="steps">
+      <div class="steps__content">
+        <h2 class="steps__title">Как начать с нами <span class="steps__title-accent">работать</span></h2>
+        <ul class="steps__items">
+          <li class="steps__item">
+            <div class="steps__item-content">
+              <h3 class="steps__item-title"><span class="steps__item-title-accent">01.</span> Заявка</h3>
+              <img class="steps__item-arrow" src="./icons/arrow-right.svg" alt="">
+              <p class="steps__item-descr">Оставьте заявку на сайте или позвоните нам — мы перезвоним и подберём время для встречи, которое вам подойдёт.</p>
+              <button class="steps__button" data-modal-button="lead" data-modal-speed="300">Оставить заявку</button>
+            </div>
+          </li>
+          <li class="steps__item">
+            <div class="steps__item-content">
+              <h3 class="steps__item-title"><span class="steps__item-title-accent">02.</span> Встреча</h3>
+              <img class="steps__item-arrow" src="./icons/arrow-right.svg" alt="">
+              <p class="steps__item-descr">Подберем автомобиль, расскажем все нюансы работы. Проведем инструктаж.</p>
+            </div>
+          </li>
+          <li class="steps__item">
+            <div class="steps__item-content">
+              <h3 class="steps__item-title"><span class="steps__item-title-accent">03.</span> Оформление</h3>
+              <img class="steps__item-arrow" src="./icons/arrow-right.svg" alt="">
+              <p class="steps__item-descr">Заключаем договор, подключаем к системе. Выдаем все необходимое.</p>
+            </div>
+          </li>
+          <li class="steps__item">
+            <div class="steps__item-content">
+              <h3 class="steps__item-title"><span class="steps__item-title-accent">04.</span> Первый заказ</h3>
+              <img class="steps__item-arrow" src="./icons/arrow-right.svg" alt="">
+              <p class="steps__item-descr">Автомобиль готов к аренде. Желаем хороших заказов</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about__info">
+        <div class="about__content">
+          <h2 class="about__title">О компании</h2>
+          <p class="about__descr">Являемся одним из лидеров отрасли. Только новые автомобили, и отличные условия. К вашим услугам 2000 автомобилей всех классов</p>
+          <ul class="about__items">
+            <li class="about__item">
+              <img class="about__item-image" src="./images/about1.png" alt="">
+              <p class="about__item-descr">Отличные цены</p>
+            </li>
+            <li class="about__item">
+              <img class="about__item-image" src="./images/about2.png" alt="">
+              <p class="about__item-descr">Бонусы водителям</p>
+            </li>
+            <li class="about__item">
+              <img class="about__item-image" src="./images/about3.png" alt="">
+              <p class="about__item-descr">Постоянное обновление парка</p>
+            </li>
+          </ul>
+          <button class="about__button" data-modal-button="lead" data-modal-speed="300">
+            <p class="about__button-name">Выбрать авто</p>
+            <div class="about__button-arrow-container">
+              <img class="about__button-image" src="./icons/arrow-top.svg" alt="">
+            </div>
+          </button>
+        </div>
+      </div>
+      <div class="about__image"></div>
+    </section>
+
+    <section class="reasons">
+      <div class="reasons__content">
+        <h2 class="reasons__title">Почему водители остаются<br><span class="reasons__title-accent">с нами надолго</span></h2>
+        <ul class="reasons__items">
+          <li class="reasons__item">
+            <div class="reasons__item-logo-container">
+              <img src="./icons/reasons1.svg" alt="">
+            </div>
+            <h3 class="reasons__item-title">Наши автомобили</h3>
+            <p class="reasons__item-descr">Только новые автомобили, полностью готовые к аренде</p>
+          </li>
+          <li class="reasons__item">
+            <div class="reasons__item-logo-container">
+              <img src="./icons/reasons2.svg" alt="">
+            </div>
+            <h3 class="reasons__item-title">Бонусы</h3>
+            <p class="reasons__item-descr">Всем нашим водителям предлагаем бонусную программу. Чем дольше вы с нами, тем больше выгода</p>
+          </li>
+          <li class="reasons__item">
+            <div class="reasons__item-logo-container">
+              <img src="./icons/reasons3.svg" alt="">
+            </div>
+            <h3 class="reasons__item-title">Выкуп</h3>
+            <p class="reasons__item-descr">Не хотите аренду? Предлагаем аренду с выкупом. Платите за свой автомобиль</p>
+          </li>
+          <li class="reasons__item">
+            <div class="reasons__item-logo-container">
+              <img src="./icons/reasons4.svg" alt="">
+            </div>
+            <h3 class="reasons__item-title">Техническое обслуживание</h3>
+            <p class="reasons__item-descr">Полностью берем на себя вопрос по обслуживанию. Ни о чем не думайте, мы все сделаем сами</p>
+          </li>
+          <li class="reasons__item">
+            <div class="reasons__item-logo-container">
+              <img src="./icons/reasons5.svg" alt="">
+            </div>
+            <h3 class="reasons__item-title">Честные цены</h3>
+            <p class="reasons__item-descr">Говорим твердое нет скрытым платежам и комиссиям! Только честные и открытые условия</p>
+          </li>
+          <li class="reasons__item">
+            <div class="reasons__item-logo-container">
+              <img src="./icons/reasons6.svg" alt="">
+            </div>
+            <h3 class="reasons__item-title">Приведи друга</h3>
+            <p class="reasons__item-descr">Есть друг который хорошо водит? Зовите его к нам. С нас 10.000 рублей за рекомендацию</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="requirements">
+      <div class="requirements__content">
+        <h2 class="requirements__title">Основные требования<br><span class="requirements__title-accent">к
+            водителю</span></h2>
+        <ul class="requirements__items">
+          <li class="requirements__item">
+            <div class="item_title-plus-line">
+              <h3 class="requirements__item-title">Возраст <span class="requirements__title-accent">от 21 года</span>
+              </h3>
+              <div class="requirements__item-line"></div>
+            </div>
+            <p class="requirements__item-descr">Сотрудничаем с водителями старше 21 года. Это требование федерального закона. Если Ваш возраст меньше, готовы предложить тариф доставка.</p>
+          </li>
+          <li class="requirements__item">
+            <div class="item_title-plus-line">
+              <h3 class="requirements__item-title">Опыт вождения <span class="requirements__title-accent">от 3 лет</span></h3>
+              <div class="requirements__item-line"></div>
+            </div>
+            <p class="requirements__item-descr">Ждем водителей со стажем активной езды от 3 лет. Это для Вашей безопасности, соблюдения закона, и сохранности автомобилей.</p>
+          </li>
+          <li class="requirements__item">
+            <div class="item_title-plus-line">
+              <h3 class="requirements__item-title">Водительское удостоверение <span class="requirements__title-accent">РФ</span></h3>
+              <div class="requirements__item-line"></div>
+            </div>
+            <p class="requirements__item-descr">Для сотрудничества с нами, необходимо водительское удостоверение только Российской Федерации. Это закон.</p>
+          </li>
+          <li class="requirements__item">
+            <div class="item_title-plus-line">
+              <h3 class="requirements__item-title">Наличие <span class="requirements__title-accent">КИС “АРТ”</span>
+              </h3>
+              <div class="requirements__item-line"></div>
+            </div>
+            <p class="requirements__item-descr">Необходимо наличие регистрация профиля в информационной системе КИС АРТ. Нету? Поможем оформить.</p>
+          </li>
+          <li class="requirements__item">
+            <div class="item_title-plus-line">
+              <h3 class="requirements__item-title">Отсутствие негатива <span class="requirements__title-accent">от других таксопарков</span></h3>
+              <div class="requirements__item-line"></div>
+            </div>
+            <p class="requirements__item-descr">Сотрудничаем только с добропорядочными водителями. Перед обращением проверьте отсутствие негативных записей.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="feedback" id="feedback">
+      <div class="feedback__content">
+        <h2 class="feedback__title">Отзывы наших водителей</h2>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img loading="lazy" src="./images/feedback1.jpg" alt="Отзыв НАЗВАНИЕ КОМПАНИИ 1">
+            </div>
+            <div class="swiper-slide">
+              <img loading="lazy" src="./images/feedback2.jpg" alt="Отзыв НАЗВАНИЕ КОМПАНИИ 2">
+            </div>
+            <div class="swiper-slide">
+              <img loading="lazy" src="./images/feedback3.jpg" alt="Отзыв НАЗВАНИЕ КОМПАНИИ 3">
+            </div>
+            <div class="swiper-slide">
+              <img loading="lazy" src="./images/feedback4.jpg" alt="Отзыв НАЗВАНИЕ КОМПАНИИ 5">
+            </div>
+            <div class="swiper-slide">
+              <img loading="lazy" src="./images/feedback4.jpg" alt="Отзыв НАЗВАНИЕ КОМПАНИИ 6">
+            </div>
+            <div class="swiper-slide">
+              <img loading="lazy" src="./images/feedback4.jpg" alt="Отзыв НАЗВАНИЕ КОМПАНИИ 7">
+            </div>
+            <div class="swiper-slide">
+              <img loading="lazy" src="./images/feedback4.jpg" alt="Отзыв НАЗВАНИЕ КОМПАНИИ 8">
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <img class="feedback__line" src="./icons/feedback-line.svg" alt="">
+      </div>
+    </section>
+
+    <section class="callback">
+      <div class="callback__image"></div>
+      <div class="callback__info">
+        <div class="callback__content">
+          <h2 class="callback__title">Хотите узнать <br><span class="callback__title-accent">свой заработок?</span></h2>
+          <p class="callback__descr">Для получения профессиональной консультации заполните форму обратной связи. Наш специалист свяжется с вами в кратчайшие сроки</p>
+          <form class="callback__form" action="#" method="POST">
+            <input class="callback__input" type="text" placeholder="Имя" required>
+            <input class="callback__input" type="tel" placeholder="+7 (___) ___--__--__" required>
+            <label class="callback__privacy">
+              <input class="callback__privacy-checkbox" type="checkbox">
+              <p class="callback__privacy-text">Нажимая на кнопку "Оставить заявку"<br>вы соглашаетесь с <a
+                  href="#">Политикой конфиденциальности</a></p>
+            </label>
+            <button class="callback__button" type="submit">Оставить заявку</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="questions">
+      <div class="questions__content">
+        <div class="questions__faq">
+          <h2 class="faq__title">Частые вопросы<br><span class="faq__title-accent">водителей</span></h2>
+          <ul class="faq__items">
+            <li class="faq__item">
+              <details>
+                <summary>
+                  <div class="faq__item-info">
+                    <div class="faq__item-left">
+                      <p class="faq__item-number">01.</p>
+                      <p class="faq__item-title">Как получить автомобиль?</p>
+                    </div>
+                    <img class="faq__item-arrow" src="./icons/faq-icon.svg" alt="">
+                  </div>
+                </summary>
+                <div class="faq__item-answer">
+                  <ol>
+                    <li><strong>Подайте заявку</strong> — оставьте контакты на сайте или позвоните. Менеджер уточнит,
+                      какой тариф вам нужен (Эконом/Комфорт и т. п.) — подберём авто, которое точно пройдёт в этот тариф
+                    </li>
+                    <li><strong>Приезжайте на осмотр и подписание</strong> — мы покажем машину, вместе проверим её по
+                      чек-листу, зафиксируем все имеющиеся дефекты на фото и подпишем договор и акт приёма-передачи.
+                    </li>
+                    <li><strong>Выходите на линию</strong> — авто уже готово к работе</li>
+                  </ol>
+                </div>
+              </details>
+            </li>
+            <li class="faq__item">
+              <details>
+                <summary>
+                  <div class="faq__item-info">
+                    <div class="faq__item-left">
+                      <p class="faq__item-number">02.</p>
+                      <p class="faq__item-title">Какие требования к арендатору?</p>
+                    </div>
+                    <img class="faq__item-arrow" src="./icons/faq-icon.svg" alt="">
+                  </div>
+                </summary>
+                <div class="faq__item-answer">
+                  <ul>
+                    <li>Возраст от 21 года;</li>
+                    <li>Активный стаж вождения от 3 лет;</li>
+                    <li>Водительское удостоверение категории только РФ</li>
+                    <li>Наличие КИС АРТ (Если нету, поможем оформить)</li>
+                  </ul>
+                </div>
+              </details>
+            </li>
+            <li class="faq__item">
+              <details>
+                <summary>
+                  <div class="faq__item-info">
+                    <div class="faq__item-left">
+                      <p class="faq__item-number">03.</p>
+                      <p class="faq__item-title">Что делать, если машина сломалась на линии?</p>
+                    </div>
+                    <img class="faq__item-arrow" src="./icons/faq-icon.svg" alt="">
+                  </div>
+                </summary>
+                <div class="faq__item-answer">
+                  <p>Не паникуйте — у нас всё под контролем, и мы не оставим вас на обочине. Действуйте по простому
+                    алгоритму:</p>
+                  <ol>
+                    <li><strong>Остановитесь в безопасном</strong> месте, включите аварийку, выставьте знак. Если есть
+                      риск для других участников движения — вызовите ГИБДД.</li>
+                    <li><strong>Сразу сообщите нам</strong> — позвоните на горячую линию или напишите в чат поддержки
+                      (круглосуточно). Назовите город, адрес, госномер авто и кратко опишите проблему.</li>
+                    <li><strong>Не пытайтесь чинить сами</strong> — не разбирайте узлы, не меняйте детали.</li>
+                    <li><strong>Дождитесь инструкций:</strong> мы либо пришлём техпомощь на место, либо организуем
+                      эвакуацию на наш сервис.</li>
+                  </ol>
+                </div>
+              </details>
+            </li>
+            <li class="faq__item">
+              <details>
+                <summary>
+                  <div class="faq__item-info">
+                    <div class="faq__item-left">
+                      <p class="faq__item-number">04.</p>
+                      <p class="faq__item-title">Что делать если хочется поменять авто на другое ли продлить аренду?</p>
+                    </div>
+                    <img class="faq__item-arrow" src="./icons/faq-icon.svg" alt="">
+                  </div>
+                </summary>
+                <div class="faq__item-answer">
+                  <p>Все без лишних сложностей. Мы делаем всё, чтобы вы не теряли доход и не тратил время на бюрократию.
+                  </p>
+                  <p><strong>Продлить аренду</strong> можно в любой момент. Просто скажите менеджеру за 1–2 дня до конца
+                    срока. Новый договор подписывать не нужно: делаем допсоглашение к текущему — это быстро. Цена
+                    остаётся прежней, если не меняются тарифы парка. Если продлеваешь на долгий срок (от 15 дней), можем
+                    дать скидку — обсудим индивидуально.</p>
+                  <p><strong>Сменить авто</strong> тоже реально, даже если текущая аренда ещё не закончилась. Алгоритм
+                    такой:</p>
+                  <ul>
+                    <li>Сообщаете менеджеру, что хотите поменять машину: указываете предпочтения (класс, цвет, пробег,
+                      особенности) и желаемую дату.</li>
+                    <li>Сдаёте текущее авто по стандартному чек-листу: фиксируем показания одометра, уровень топлива,
+                      состояние кузова и салона.</li>
+                    <li>Осматриваете новую машину, подписываете акт приёма-передачи — и сразу на линию.</li>
+                  </ul>
+                </div>
+              </details>
+            </li>
+            <li class="faq__item">
+              <details>
+                <summary>
+                  <div class="faq__item-info">
+                    <div class="faq__item-left">
+                      <p class="faq__item-number">05.</p>
+                      <p class="faq__item-title">Есть ли у вас бонусы или программы для постоянных водителей?</p>
+                    </div>
+                    <img class="faq__item-arrow" src="./icons/faq-icon.svg" alt="">
+                  </div>
+                </summary>
+                <div class="faq__item-answer">
+                  <p>Да, мы ценим водителей, которые сотрудничают с нами на постоянной основе, и стараемся сделать
+                    условия максимально выгодными. У нас действует система поощрений — она включает не только финансовые
+                    преимущества, но и дополнительные удобства.</p>
+                  <ul>
+                    <li><strong>Выгода за длительный срок</strong>. Если Вы планируете арендовать автомобиль на
+                      продолжительный период, мы предлагаем более комфортные условия. При продлении аренды на длительный
+                      срок подходим к расчёту стоимости гибко и стараемся учесть интересы постоянного партнёра.</li>
+                    <li><strong>Бонус за рекомендацию</strong>. Если Вы порекомендуете нам ответственного водителя, мы
+                      обязательно это отметим. За успешную рекомендацию Вы получаете приятный бонус — его можно
+                      использовать в счёт аренды либо применить как дополнительное преимущество при следующих условиях
+                      сотрудничества</li>
+                    <li><strong>Поощрение за аккуратность</strong>. Мы учитываем, в каком состоянии Вы сдаёте
+                      автомобиль. Если машина возвращается без новых повреждений и штрафов, это фиксируется в Вашей
+                      истории сотрудничества — и в дальнейшем мы предлагаем таким водителям особые условия.</li>
+                    <li><strong>Приоритет при выборе авто</strong>. Регулярным партнёрам мы даём возможность раньше
+                      других ознакомиться с новыми и лучшими автомобилями в нашем парке. Так Вы сможете подобрать
+                      подходящий вариант до того, как он станет доступен всем остальным.</li>
+                    <li><strong>Поддержка на старте</strong>. Если Вы подключаетесь впервые или у Вас есть вопросы по
+                      работе с агрегатором, мы поможем сориентироваться: подскажем основные шаги, обратим внимание на
+                      важные нюансы и проконсультируем по документам. Наша цель — помочь Вам быстрее выйти на линию и не
+                      тратить время на поиск информации.</li>
+                  </ul>
+                </div>
+              </details>
+            </li>
+            <li class="faq__item">
+              <details>
+                <summary>
+                  <div class="faq__item-info">
+                    <div class="faq__item-left">
+                      <p class="faq__item-number">06.</p>
+                      <p class="faq__item-title">Как и где заправлять автомобиль?</p>
+                    </div>
+                    <img class="faq__item-arrow" src="./icons/faq-icon.svg" alt="">
+                  </div>
+                </summary>
+                <div class="faq__item-answer">
+                  <p>Мы постарались сделать этот процесс максимально простым и выгодным. У Вас есть несколько удобных
+                    способов пополнить бак:</p>
+                  <ul>
+                    <li><strong>Через сервис «Яндекс Заправки»</strong>. Это самый быстрый вариант: не нужно выходить из
+                      машины. Просто откройте приложение, выберите нашу АЗС из списка, укажите номер колонки и тип
+                      топлива — оплата пройдёт автоматически. Чеки сохраняются в приложении, их удобно прикладывать,
+                      если понадобится подтвердить расходы.</li>
+                    <li><strong>По нашей топливной карте</strong>. Если Вы работаете с нами не первый день, мы выдаём
+                      топливную карту — ею можно расплачиваться на большинстве крупных сетей АЗС. Это удобно, когда
+                      нужно заправиться оперативно и без привязки к приложению. Если карты у Вас ещё нет — скажите
+                      менеджеру, её подготовят к ближайшей смене.</li>
+                    <li><strong>На любой АЗС за наличные или своей картой</strong>. Если рядом нет подходящей станции
+                      или оба предыдущих способа по какой-то причине не подходят, Вы можете заправиться на любой
+                      проверенной АЗС. Главное — обязательно сохраните кассовый чек: он может понадобиться для
+                      отчётности или при спорных ситуациях по уровню топлива.</li>
+                  </ul>
+                </div>
+              </details>
+            </li>
+          </ul>
+        </div>
+
+        <h3 class="questions__first-title">Аренда авто для такси в Москве: Ваш быстрый старт к стабильному заработку
+        </h3>
+        <p class="questions__text">Ищете надежный способ начать зарабатывать в Москве или хотите оптимизировать свой
+          существующий бизнес в сфере такси? Ключевой вопрос, с которым сталкивается каждый водитель — где взять
+          современный, легальный и технически исправный автомобиль. Покупка требует крупных первоначальных вложений,
+          кредитов и расходов на обслуживание. Гораздо более разумной и выгодной альтернативой является долгосрочная
+          аренда автомобиля для такси.<br><br>Мы предлагаем идеальное решение для
+          профессионалов
+          за рулем. Мы не просто сдаем машины в аренду — мы предоставляем вам готовый, полностью работоспособный
+          инструмент для заработка, избавляя от всех сопутствующих хлопот.</p>
+        <h3 class="questions__second-title">Почему аренда автомобиля у нас — это выгодно и удобно?</h3>
+        <p class="questions__text">Экономия без скрытых платежей. Забудьте о крупных суммах на покупку, страховке,
+          техобслуживании и непредвиденном ремонте. Вы платите только фиксированную стоимость аренды. В неё уже
+          включено
+          комплексное страхование КАСКО/ОСАГО, регулярное техническое обслуживание у официальных дилеров и замена
+          расходников. Вы получаете прозрачные условия и защиту от неожиданных трат. Автопарк, соответствующий всем
+          стандартам. Наши автомобили — это исключительно свежие модели, которые полностью отвечают строгим
+          требованиям
+          агрегаторов (таких как Яндекс.Такси, Ситимобил, Gett), а также московского законодательства для
+          перевозчиков.
+          Комфортный салон, кондиционер, современная мультимедиа и экономичный двигатель — всё для того, чтобы ваши
+          пассажиры оставались довольны, а вы получали высокий рейтинг и больше заказов.</p>
+        <h3 class="questions__second-title">Полная юридическая и техническая готовность. Вы получаете автомобиль «под
+          ключ»:</h3>
+        <ul class="questions__items">
+          <li class="questions__item">С уже оформленной лицензией такси (разрешением) и всеми необходимыми
+            документами.
+            </p>
+          </li>
+          <li class="questions__item">С установленными и активированными таксометрами и необходимыми приложениями.</p>
+          </li>
+          <li class="questions__item">Прошедший предварительную мойку и полную заправку.</p>
+          </li>
+          <li class="questions__item">С гарантией 100% исправности, благодаря ежедневному контролю состояния.</p>
+          </li>
+        </ul>
+        <p class="questions__text">Свобода и гибкость для водителя. Работайте по своему графику. Мы предлагаем
+          различные
+          тарифы аренды — от посуточных до долгосрочных на несколько месяцев, что позволяет вам подобрать оптимальный
+          вариант под свои финансовые планы. Хотите сменить автомобиль? Без проблем! В нашем обширном парке вы всегда
+          можете выбрать другую модель.</p>
+        <h3 class="questions__second-title">Для кого наше предложение?</h3>
+        <ul class="questions__items">
+          <li class="questions__item">Начинающим водителям, которые хотят быстро и без риска начать карьеру в такси.
+            </p>
+          </li>
+          <li class="questions__item">Опытным таксистам, желающим перейти на более новую и комфортную машину без
+            затрат
+            на покупку.</p>
+          </li>
+          <li class="questions__item">Владельцам таксопарков, которым необходимо гибко расширять или обновлять свой
+            автопарк.</p>
+          </li>
+        </ul>
+        <p class="questions__text">Не теряйте время и потенциальный доход. С нами вы получаете
+          не
+          просто транспортное средство, а надежного партнера для успешной работы на столичном рынке такси. Ваша дорога
+          к
+          стабильному высокому заработку начинается с одного звонка нам. Свяжитесь с нами сегодня, чтобы выбрать
+          автомобиль и начать работать уже завтра!</p>
+      </div>
+    </section>
+
+    <footer class="footer" id="footer">
+      <div class="footer__top-section">
+        <div class="footer__contacts">
+          <h2 class="footer__title">Контакты</h2>
+          <div class="footer__contacts-item">
+            <p class="contacts-item__label">Позвонить по телефону:</p>
+            <p class="contacts-item__value">+7 (992) 161-45-24</p>
+            <div class="contacts-item__line"></div>
+          </div>
+          <div class="footer__contacts-item">
+            <p class="contacts-item__label">Написать на почту:</p>
+            <p class="contacts-item__value"></p>
+            <div class="contacts-item__line"></div>
+          </div>
+          <div class="footer__contacts-item">
+            <p class="contacts-item__label">Адрес:</p>
+            <p class="contacts-item__value">Москва, Профсоюзная улица, 9</p>
+            <div class="contacts-item__line"></div>
+          </div>
+          <div class="footer__contacts-item">
+            <p class="contacts-item__label">Мы в мессенджерах</p>
+            <div class="contacts__icons">
+              <a href="#"><img class="contacts__icon" src="./icons/tg.svg" alt=""></a>
+              <a href=""><img class="contacts__icon" src="./icons/wa.svg" alt=""></a>
+              <a href=""><img class="contacts__icon" src="./icons/max.svg" alt=""></a>
+            </div>
+            <button class="footer__contacts-button" data-modal-button="lead" data-modal-speed="300">Оставить
+              заявку</button>
+          </div>
+        </div>
+        <div class="footer__map">
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac54eb1ca55c2610de527e7bd6987cce82ab75996d4d9bfec4d273d8cb084c803&amp;source=constructor"
+            width="100%" height="100%" frameborder="0">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="footer__links">
+        <a href="#" class="footer__links-item">Аренда с выкупом</a>
+        <a href="#" class="footer__links-item">Посменная работа</a>
+        <a href="#" class="footer__links-item">Подключение к Яндекс Такси</a>
+      </div>
+
+      <div class="footer__line"></div>
+      <div class="footer__privacy">
+        <p class="footer__privacy-text">Все права защищены ©</p>
+        <a href="" class="footer__policy">Политика конфиденциальности</a>
+      </div>
+    </footer>
+
+    <div class="modal">
+      <div class="modal__window" data-modal-window="lead">
+        <button class="modal__close" aria-label="Закрыть" title="Закрыть" data-modal-close>
+          <img src="./icons/modal-cross.svg" alt="">
+        </button>
+        <div class="modal__content">
+          <h3 class="modal__title">Оставьте заявку</h3>
+          <p class="modal__text">Заполните форму обратной связи для получения консультации. Мы свяжемся с вам в
+            ближайшее возможное время</p>
+          <form class="modal__form" action="#" method="POST">
+            <input class="modal__input" type="text" placeholder="Имя" required>
+            <input class="modal__input" type="tel" placeholder="Телефон" required>
+            <label class="modal__privacy">
+              <input class="modal__privacy-checkbox" type="checkbox">
+              <p class="modal__privacy-text">Нажимая на кнопку "Оставить заявку"<br>вы соглашаетесь с <a
+                  href="#">Политикой конфиденциальности</a></p>
+            </label>
+            <button class="modal__button">
+              <p>Оставить заявку</p>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</body>
+
+</html>

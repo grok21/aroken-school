@@ -1,0 +1,23 @@
+{
+  "name": "scss_project",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "rebuild": "rm -rf dist && vite build && vite preview"
+  },
+  "devDependencies": {
+    "eslint": "^10.7.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.6",
+    "prettier": "^3.9.5",
+    "sass-embedded": "^1.100.0",
+    "sharp": "^0.35.3",
+    "svgo": "^4.0.2",
+    "vite": "^8.1.1",
+    "vite-plugin-image-optimizer": "^2.0.3"
+  }
+}

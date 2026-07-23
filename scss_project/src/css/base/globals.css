@@ -1,0 +1,43 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* background: #000 !important; */
+  background: #fff !important;
+}
+
+.page {
+  font-family: var(--font-family);
+  scroll-behavior: smooth;
+  scroll-padding-top: 98px;
+  scrollbar-gutter: stable;
+}
+
+.page__main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 21px;
+  gap: 93px;
+  width: 100%;
+}
+
+@media (width <= 1440px) {
+  .page__main {
+    margin-top: 12px;
+    gap: 50px;
+  }
+}
+
+@media (width <=1024px) {
+  .page__main_vykup {
+    gap: 85px;
+  }
+}
+
+@media (width <=576px) {
+  .page__main {
+    margin-top: 5px;
+    gap: 15px;
+  }
+}
