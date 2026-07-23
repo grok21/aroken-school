@@ -1,5 +1,7 @@
 export default class Modal {
   constructor(config) {
+    console.log('Hello');
+    
     const defaultConfig = {
       MODAL_WRAPPER: "modal",
     };

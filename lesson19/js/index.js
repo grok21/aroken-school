@@ -5,6 +5,8 @@ import { productSlider } from "./product-slider.js";
 import { sizes } from './sizes.js';
 
 try {
+  console.log('Hello1');
+
   const headerFixed = new HeaderFixed({
     HEADER: "header",
     HEADER_FIXED: "header--fixed",
